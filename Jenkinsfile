@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        any {
+        docker {
             image 'maven:3.8.1-adoptopenjdk-11'
             args '-v C:/ProgramData/Jenkins/.m2:/root/.m2'
         }
